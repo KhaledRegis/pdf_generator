@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+        <appender name="R" class="org.apache.log4j.DailyRollingFileAppender">
+                <param name="Threshold" value="INFO" />
+                <param name="File" value="/applogs/Slog/DCUtility.log" />
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="%d %d{Z} [%t] %-5p (%F:%L) - %m%n" />
+                </layout>
+        </appender>
+       <logger name="com.test.pdf">
+       <level value="INFO"/>
+      <appender-ref ref="R" /> 
+       </logger>
+        <root >
+                <priority value="INFO" />
+               <!--  <appender-ref ref="R" />  -->
+        </root>
+</log4j:configuration>

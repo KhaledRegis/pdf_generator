@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Bill - A4 Page</title>
+    <link rel="stylesheet" href='./styles.css'>
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="bill-header">
+            <img src='./new.PNG' alt="">
+        </div>
+        <div class="content">
+            <div class="customer-info">
+                <table>
+                    <tr>
+                        <th align="left">Customer Name</th>
+                        <td align="center">{{CustomerName}}</td>
+                        <th align="right">اسم العميل</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Customer ID/CR No.</th>
+                        <td align="center">{{CustomerID}}</td>
+                        <th align="right">هوية العميل/السجل التجاري</th>
+                    </tr>
+                    <tr>
+                        <th align="left">CR Date</th>
+                        <td align="center">{{CRDate}}</td>
+                        <th align="right">تاريخ السجل التجاري</th>
+                    </tr>
+                    <tr>
+                        <th align="left">CR City</th>
+                        <td align="center">{{CRCity}}</td>
+                        <th align="right">مدينة السجل التجاري</th>
+                    </tr>
+                </table>
+                <table class="no-border">
+                    <tr>
+                        <th align="left">National Address</th>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th align="left">Building No. <span>{{BuildingNumber}}</span></th>
+                                    <th align="right">رقم المبنى: <span>{{BuildingNumber}}</span></th>
+                                </tr>
+                                <tr>
+                                    <th align="left">Street Name: <span>{{Street}}</span></th>
+                                    <th align="right">اسم الشارع: <span>{{Street}}</span></th>
+                                </tr>
+                                <tr>
+                                    <th align="left">Neighborhood: <span>{{Neighboorhood}}</span></th>
+                                    <th align="right">اسم الحي: <span>{{Neighboorhood}}</span></th>
+                                </tr>
+                                <tr>
+                                    <th align="left">City: <span>{{City}}</span></th>
+                                    <th align="right">اسم المدينة: <span>{{City}}</span></th>
+                                </tr>
+                                <tr>
+                                    <th align="left">Postal Code: <span>{{PostalCode}}</span></th>
+                                    <th align="right">الرمز البريدي: <span>{{PostalCode}}</span></th>
+                                </tr>
+                                <tr>
+                                    <th align="left">Additional No.:<span>{{AdditionalNo}}</span></th>
+                                    <th align="right">الرقم الاضافي: <span>{{AdditionalNo}}</span></th>
+                                </tr>
+                            </table>
+                        <th align="right">العنوان الوطني</th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th align="left">Authorized Person Name</th>
+                        <td align="center">{{AuthPersonName}}</td>
+                        <th align="right">اسم الشخص المفوض</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Authorized Person ID No.</th>
+                        <td align="center">{{AuthPersonID}}</td>
+                        <th align="right">رقم هوية الشخص المفوض</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Autorized Person Contact No.</th>
+                        <td align="center">{{AuthPersonContact}}</td>
+                        <th align="right">رقم اتصال الشخص المفوض</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Authorized Person Email Address</th>
+                        <td align="center">{{AuthPersonEmail}}</td>
+                        <th align="right">البريد الإلكتروني للشخص المفوض</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Authorized Person Nationality</th>
+                        <td align="center">{{AuthPersonNationality}}</td>
+                        <th align="right">جنسية المفوض</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Contract Number:</th>
+                        <td align="center">{{ContractNumber}}</td>
+                        <th align="right">رقم العقد</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Contract Date:</th>
+                        <td align="center">{{ContractDate}}</td>
+                        <th align="right">تاريخ العقد</th>
+                    </tr>
+                    <tr>
+                        <th align="left">Contract Period in months(auto renewed)</th>
+                        <td align="center">{{ContractPeriod}}</td>
+                        <th align="right">مدة العقد بالأشهر متجدد تلقائيا</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-break-before"></div>
+        <div class="bill-header">
+            <img src="./new.PNG" alt="">
+        </div>
+        <div class="content">
+            <div class="contract-details">
+
+
+                <!-- Main product Monthly Recurrent Charges - الرسوم الشهرية المتكررة للخدمة -->
+                <div class="table-label">
+                    <p lang="en" align="left">Main product Monthly Recurrent Charges</p>
+                    <p lang="ar" align="right">الرسوم الشهرية المتكررة للخدمة</p>
+                </div>
+                <table>
+                    <tr lang="en">
+                        <th>#</th>
+                        <th class="min-width">Root Product</th>
+                        <th class="min-width">Product name</th>
+                        <th>Bandwith Speed</th>
+                        <th>Qty.</th>
+                        <th>Start price MRC</th>
+                        <th>Discount %</th>
+                        <th>Net Price after Discount</th>
+                        <th>Extended net price</th>
+                        <th>Commitment Duration in months/years</th>
+                    </tr>
+                    <tr lang="ar">
+                        <th>#</th>
+                        <th>نوع الخدمة</th>
+                        <th>اسم الخدمة/المنتج</th>
+                        <th>النطاق السرعة</th>
+                        <th>الكمية</th>
+                        <th>الرسم الشهري</th>
+                        <th>نسبة الخصم</th>
+                        <th>السعر بعد الخصم</th>
+                        <th>الرسوم الاجمالية للكمية</th>
+                        <th>مدة الالتزام <br>بالأشهر/السنوات</th>
+                    </tr>
+                    <!-- Bellow Insert Data 10 cols -->
+                    {{MainProductMRC}}
+                </table>
+
+                <!-- Installation fees/Non-recurrent Charges - رسوم التأسيس/الرسوم غير المتكررة -->
+                <div class="table-label">
+                    <p lang="en" align="left">Installation fees/Non-recurrent Charges</p>
+                    <p lang="ar" align="right">رسوم التأسيس/الرسوم غير المتكررة</p>
+                </div>
+                <table>
+                    <tr lang="en">
+                        <th>#</th>
+                        <th class="min-width">Root Product</th>
+                        <th class="min-width">Product name</th>
+                        <th>Bandwith<br>Speed</th>
+                        <th>Qty.</th>
+                        <th>Start<br>price<br>NRC</th>
+                        <th>Extended<br>net<br>price</th>
+                    </tr>
+                    <tr lang="ar">
+                        <th>#</th>
+                        <th>نوع الخدمة</th>
+                        <th>اسم الخدمة/المنتج</th>
+                        <th>النطاق السرعة</th>
+                        <th>الكمية</th>
+                        <th>الرسم الشهري</th>
+                        <th>مدة الالتزام <br>بالأشهر/السنوات</th>
+                    </tr>
+                    <!-- Bellow Insert Data 7 cols -->
+                    {{InstallationFees/NRC}}
+                </table>
+
+                <!-- VAS Monthly Recurrent Charges - الرسوم الشهرية المتكررة للخدمات المضافة-->
+                <div class="table-label">
+                    <p lang="en" align="left">VAS Monthly Recurrent Charges</p>
+                    <p lang="ar" align="right">الرسوم الشهرية المتكررة للخدمات المضافة</p>
+                </div>
+                <table>
+                    <tr lang="en">
+                        <th>#</th>
+                        <th class="min-width">Root Product</th>
+                        <th class="min-width">Product name</th>
+                        <th>Bandwith<br>Speed</th>
+                        <th>Qty.</th>
+                        <th>Start<br>price<br>MRC</th>
+                        <th>Extended<br>net<br>price</th>
+                    </tr>
+                    <tr lang="ar">
+                        <th>#</th>
+                        <th>نوع الخدمة</th>
+                        <th>اسم الخدمة/المنتج</th>
+                        <th>النطاق السرعة</th>
+                        <th>الكمية</th>
+                        <th>الرسم الشهري</th>
+                        <th>مدة الالتزام <br> بالأشهر/السنوات</th>
+                    </tr>
+                    <!-- Bellow Insert Data 7 cols -->
+                    {{VASMonthlyRecurrentCharges}}
+                </table>
+
+                <!-- Device Details (if any) - الرسوم الشهرية المتكررة للخدمات المضافة-->
+                <div class="table-label">
+                    <p lang="en" align="left">Device Details -if any-</p>
+                    <p lang="ar" align="right">تفاصيل الجهاز -إن وجد-</p>
+                </div>
+                <table>
+                    <tr lang="en">
+                        <th>#</th>
+                        <th class="min-width">Device Model Name</th>
+                        <th>Device<br>Memory</th>
+                        <th>Color</th>
+                        <th>Qty</th>
+                        <th>IMEI number</th>
+                    </tr>
+                    <tr lang="ar">
+                        <th>#</th>
+                        <th>اسم/نوع الجهاز</th>
+                        <th>السعة</th>
+                        <th>اللون</th>
+                        <th>الكمية</th>
+                        <th>الرقم التسلسلي</th>
+                    </tr>
+                    {{DeviceDetails}}
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-break-before"></div>
+        <div class="bill-header">
+            <img src="./new.PNG" alt="">
+        </div>
+        <div class="content">
+            <div class="employee-info">
+                <!-- Service Provider Employee info - معلومات الموظف مقدم الخدمة -->
+                <div class="table-label">
+                    <p lang="en" align="left">Service Provider Employee info</p>
+                    <p lang="ar" align="right">معلومات الموظف مقدم الخدمة</p>
+                </div>
+                <table>
+                    <tr>
+                        <th align="left" lang="en">Employee Name:</th>
+                        <td align="center">{{EmployeeName}}</td>
+                        <th align="right" lang="ar">اسم الموظف:</th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">ID Number:</th>
+                        <td align="center">{{IDNumber}}</td>
+                        <th align="right" lang="ar">رقم الهوية:</th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">Nationality:</th>
+                        <td align="center">{{Nationality}}</td>
+                        <th align="right" lang="ar">الجنسية:</th>
+                    </tr>
+                </table>
+                <!-- Main product Monthly Recurrent Charges - الرسوم الشهرية المتكررة للخدمة -->
+                <div class="table-label">
+                    <p lang="en" align="left">Customer Approval (E-signature)</p>
+                    <p lang="ar" align="right">موافقة العميل التوقيع الالكتروني</p>
+                </div>
+                <table>
+                    <tr>
+                        <th align="left" lang="en">Approval Transaction No.</th>
+                        <td align="center">{{ApprovalTransactionNumber}}</td>
+                        <th align="right" lang="ar">رقم عملية الموافقة:</th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">Approval Transaction Date:</th>
+                        <td align="center">{{ApprovalTransactionDate}}</td>
+                        <th align="right" lang="ar">تاريخ عملية الموافقة</th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">Approval Transaction Time::</th>
+                        <td align="center">{{ApprovalTransactionTime}}</td>
+                        <th align="right" lang="ar">وقت العملية الموافقة</th>
+                    </tr>
+                </table>
+                <table class="no-border">
+                    <tr>
+                        <th align="left" lang="en">
+                            You may review the service details and
+                            features by visiting company website,
+                            Business page through following link:
+                        </th>
+                        <td></td>
+                        <th align="right" lang="ar">
+                            يمكن الاطلاع على تفاصيل الخدمات ومميزاتها
+                            على موقع الشركة في صفحة قطاع
+                            الأعمال من خلال الرابط التالي :</th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">
+                            <a href="https://www.stc.com.sa/content/stc/sa/en/business/connect.html" target="_blank">
+                                https://www.stc.com.sa/wps/wcm/connect/ english/business/business
+                            </a>
+                        </th>
+                        <td></td>
+                        <th align="right" lang="ar">
+                            <a href="https://www.stc.com.sa/content/stc/sa/ar/business/connect.html" target="_blank">
+                                https://www.stc.com.sa/wps/wcm/connect/ arabic/business/business
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">
+                            To view the Service Level Agreement,
+                            please visit the following link
+                        </th>
+                        <td></td>
+                        <th align="right" lang="ar">
+                            للاطلاع على اتفاقية مستوى
+                            الخدمة وبنودها،فضلاً الانتقال إلى الرابط التالي:
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">
+                            <a href="https://www.stc.com.sa/wps/wcm/connect/english/privacyStatement/sla" target="_blank">
+                                https://www.stc.com.sa/wps/wcm/connect/ english/privacyStatement/sla
+                            </a>
+                        </th>
+                        <td></td>
+                        <th align="right" lang="ar">
+                            <a href="https://www.stc.com.sa/wps/wcm/connect/arabic/privacyStatement/sla" target="_blank">
+                                https://www.stc.com.sa/wps/wcm/connect/ arabic/privacyStatement/sla
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">
+                            By approving this contract, I
+                            acknowledge that I have read and
+                            accept all the general &amp; specific terms
+                            and conditions related to this contract
+                            published on the following link:
+                        </th>
+                        <td></td>
+                        <th align="right" lang="ar">
+                            بالموافقة على هذا العقد أقر بالاطلاع على الشروط
+                            والأحكام العامة والخاصة لهذا العقد والمتاحة على
+                            الرابط التالي وقبولها:
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">
+                            <a href="https://www.stc.com.sa/wps/wcm/connect/english/privacyStatement/dgt-terms-and-conditions" target="_blank">
+                                https://www.stc.com.sa/wps/wcm/connect/ english/privacyStatement/dgt-terms-and-conditions
+                            </a>
+                        </th>
+                        <td></td>
+                        <th align="right" lang="ar">
+                            <a href="https://www.stc.com.sa/wps/wcm/connect/arabic/privacyStatement/dgt-terms-and-conditions" target="_blank">
+                                https://www.stc.com.sa/wps/wcm/connect/ arabic/privacyStatement/dgt-terms-and-conditions
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="left" lang="en">
+                            <img src="./qr_left.png" width="100px" alt="">
+
+                        </th>
+                        <td>
+                        </td>
+                        <th align="right" lang="ar">
+                            <img src="./qr_right.png" width="100px" alt="">
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-break-before"></div>
+        <div class="bill-header">
+            <img src="./new.PNG" alt="">
+        </div>
+        <div class="content">
+            <div class="appendix">
+                <!-- Appendix: List of Services - ملحق: قائمة الخدمات -->
+                <div class="table-label">
+                    <p lang="ar" align="center">ملحق: قائمة الخدمات</p>
+                    <p lang="en" align="center">Appendix: List of Services</p>
+                </div>
+                <table>
+                    <tr lang="en">
+                        <th>Service No / Circuit No</th>
+                        <th>Bandwidth Speed</th>
+                        <th>Product name</th>
+                    </tr>
+                    <tr lang="ar">
+                        <th>رقم الدائرة/رقم الخدمة</th>
+                        <th>النطاق السرعة</th>
+                        <th>اسم الخدمة/المنتج</th>
+                    </tr>
+                    {{AppendixList}}
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var arabicPatt = /[\u0600-\u06ff]|[\u0750-\u077F]|[\u08A0-\u08FF]/;
+    [].forEach.call(document.getElementsByTagName('th'), function (p) {
+        var lang, dir;
+        if (arabicPatt.test(p.textContent)) {
+            lang = 'ar'; dir = 'rtl';
+        }
+        else {
+            lang = 'en'; dir = 'ltr';
+        }
+        p.setAttribute('lang', lang);
+        p.setAttribute('dir', dir);
+    });
+    [].forEach.call(document.getElementsByTagName('p'), function (p) {
+        var lang, dir;
+        if (arabicPatt.test(p.textContent)) {
+            lang = 'ar'; dir = 'rtl';
+        }
+        else {
+            lang = 'en'; dir = 'ltr';
+        }
+        p.setAttribute('lang', lang);
+        p.setAttribute('dir', dir);
+    });
+
+
+</script>
+
+</html>

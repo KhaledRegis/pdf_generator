@@ -1,0 +1,373 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: ArabicSTC;
+  src: url("./NotoSansArabic-Light.ttf");
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF;
+}
+
+@font-face {
+  font-family: ArabicSTC-Bold;
+  src: url("./NotoSansArabic-Regular.ttf");
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF;
+}
+
+@font-face {
+  font-family: STCBase;
+  src: url("./STCForward-Regular.ttf");
+}
+
+/* @font-face {
+  font-family: STCBase-Light;
+  src: url(\resources/STCForward-Light.ttf);
+  font-weight: lighter;
+} */
+
+/* Set page size to A4 */
+@page {
+  /* size: A4; */
+  margin: 0;
+  width: 826px;
+  height: 1069px;
+
+  /* width: 2480px;
+  height: 3508px; */
+}
+/* Page break before the specified element */
+.page-break-before {
+  page-break-before: always;
+}
+
+/* Page break after the specified element */
+.page-break-after {
+  page-break-after: always;
+}
+
+.page-break-inside {
+  page-break-inside: avoid;
+}
+
+/* Set body size to A4 and remove default margins */
+/* body {
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+} */
+
+.page {
+  margin: 0 auto;
+}
+
+/* Content container */
+.content {
+  width: 100%;
+  padding: 0 2.5cm;
+  /* margin: 0 2.5cm; */
+  /*margin: auto; */
+  /* Make the content fill the full height of the page */
+}
+
+/* Start .customer-info */
+.customer-info *:lang(en) {
+  font-family: "STCBase";
+  font-weight: lighter;
+  font-size: 11pt;
+}
+
+.customer-info *:lang(ar) {
+  font-family: "ArabicSTC-Bold";
+  font-weight: normal;
+  font-size: 11pt;
+}
+
+.customer-info .no-border span {
+  font-family: "STCBase" !important;
+  font-weight: lighter !important;
+}
+
+/* Bill styles */
+.customer-info table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.customer-info span {
+  margin: 0;
+  padding: 0;
+  color: black;
+  /* font-size: 10pt; */
+  font-weight: normal;
+}
+
+.customer-info th,
+.customer-info td {
+  border-bottom: 1px solid #888;
+  vertical-align: top;
+  padding: 3px 0;
+}
+
+.customer-info th {
+  color: #6A01BB;
+}
+
+.bill-header {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.bill-header img {
+  width: 100%;
+}
+
+.customer-info {
+  margin-top: 20px;
+}
+
+.customer-info td[align="center"] {
+  font-family: "STCBase";
+  max-width: 200px;
+  overflow-wrap: break-word;
+  font-size: 10pt;
+}
+
+.customer-info th[align="left"] {
+  min-width: 25%;
+  /* width: 250px; */
+  max-width: 250px;
+}
+
+.customer-info th[align="right"] {
+  min-width: 25%;
+  /* width: 250px; */
+  max-width: 250px;
+}
+
+.customer-info table tr {
+  height: 1.5rem;
+}
+
+.customer-info .no-border table * {
+  border: 0px transparent !important;
+}
+
+.customer-info .no-border table th {
+  min-width: auto;
+}
+
+.customer-info .no-border table {
+  width: 100%;
+}
+
+.customer-info .no-border table th,
+.customer-info .no-border table td,
+.customer-info .no-border table span {
+  font-size: 9pt;
+  overflow-wrap: break-word;
+}
+
+.customer-info .no-border th[align="right"] {
+  width: 20%;
+}
+
+.customer-info .no-border th[align="left"] {
+  width: 25%;
+}
+
+.customer-info .no-border td table {
+  width: 100%;
+}
+.customer-info .no-border td * {
+  padding: 1px;
+}
+
+.customer-info .no-border table tr {
+  height: 20px;
+}
+/* End .customer-info */
+
+/* Start .contract-details  */
+
+.contract-details *:lang(en) {
+  font-family: "STCBase";
+  font-weight: lighter;
+  font-size: 9pt;
+}
+
+.contract-details *:lang(ar) {
+  /* font-family: "ArabicSTC"; */
+  font-family: "ArabicSTC-Bold";
+  font-weight: normal;
+  font-size: 9pt;
+}
+
+.contract-details .table-label {
+  margin-bottom: 1rem;
+}
+
+.contract-details table {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.contract-details .table-label p {
+  display: inline;
+  padding: 0 15px;
+  font-size: 11pt;
+  color: #bbb;
+}
+.contract-details .table-label p[align="right"] {
+  font-size: 12pt;
+  float: right;
+}
+
+.contract-details table th {
+  background-color: #6A01BB;
+  color: #fff;
+  padding: 2px 2px 0 2px;
+  vertical-align: top;
+  height: 40px;
+}
+
+.contract-details table td {
+  min-width: fit-content;
+  /* max-width: 250px; */
+  text-align: center;
+  font-size: 10pt !important;
+  padding: 0 10px;
+  word-wrap: break-word;
+}
+.contract-details table td:first-child {
+  padding: 0;
+}
+.contract-details .min-width {
+  min-width: 80px;
+}
+/* End .contract-details  */
+
+/* Start .employee-info */
+
+.employee-info *:lang(en) {
+  font-family: "STCBase";
+  font-weight: lighter;
+  font-size: 10pt;
+}
+
+.employee-info *:lang(ar) {
+  /* font-family: "ArabicSTC"; */
+  font-family: "ArabicSTC-Bold";
+  font-weight: normal;
+  font-size: 10pt;
+}
+
+.employee-info .table-label {
+  margin-bottom: 1rem;
+}
+
+.employee-info .table-label p {
+  display: inline;
+  /* margin: 0 15px; */
+  font-size: 10.5pt;
+  color: #bbb;
+  border-bottom: 0.5px solid #bbb;
+}
+.employee-info .table-label p[align="right"] {
+  font-size: 12pt;
+  float: right;
+}
+.employee-info table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.employee-info th,
+.employee-info td {
+  border-bottom: 1px solid #888;
+  vertical-align: top;
+  padding: 3px 0;
+}
+
+.employee-info th {
+  color: #6A01BB;
+}
+
+.employee-info .no-border th,
+.employee-info .no-border td {
+  border: none;
+}
+
+.employee-info .no-border td {
+  width: 10px;
+}
+
+.employee-info .no-border a {
+  word-wrap: break-word;
+}
+
+/* End .employee-info */
+
+/* Start .appendix */
+.appendix *:lang(en) {
+  font-family: "STCBase";
+  font-weight: lighter;
+  font-size: 10pt;
+}
+
+.appendix *:lang(ar) {
+  /* font-family: "ArabicSTC"; */
+  font-family: "ArabicSTC-Bold";
+  font-weight: normal;
+  font-size: 10pt;
+}
+
+.appendix .table-label {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.appendix .table-label p {
+  /* margin: 0 15px; */
+  font-size: 12pt;
+  color: #bbb;
+  border-bottom: 0.5px solid #bbb;
+  display: table;
+  width: fit-content;
+  margin: 0 auto;
+}
+.appendix .table-label p[align="right"] {
+  font-size: 12pt;
+}
+.appendix table {
+  border-spacing: 0;
+  width: 100%;
+}
+.appendix table th {
+  background-color: #6A01BB;
+  border: none;
+  color: #fff;
+  padding: 2px 0 10px 0;
+  vertical-align: top;
+}
+
+.appendix table td {
+  word-wrap: break-word;
+  text-align: center;
+  border-bottom: 1px solid #888;
+}
+.appendix table td:first-child,
+.appendix table td:last-child {
+  max-width: 40%;
+}
+/* End .appendix */

@@ -1,0 +1,119 @@
+<SiebelMessage MessageId="3-18L1YW" IntObjectName="BIPContractNewSaleIO" MessageType="Integration Object" IntObjectFormat="Siebel Hierarchical">
+   <ListOfBipcontractnewsaleio>
+      <Stcquotereportbc>
+         <Account>?????</Account>
+         <BuildingNum>66</BuildingNum>
+         <Name>3-O9A3FF5</Name>
+         <Neighbourhood/>
+         <PrimaryAccountCity>?????? ??? ???? - ?????</PrimaryAccountCity>
+         <PrimaryAccountPostalCode>33332</PrimaryAccountPostalCode>
+         <QuoteNumber>3-O9A3FF5</QuoteNumber>
+         <STCActualContractStartDt/>
+         <STCAuthContactDigitalFstName>Balivadas</STCAuthContactDigitalFstName>
+         <STCAuthContactDigitalLastName>Sowmya</STCAuthContactDigitalLastName>
+         <STCCompanyIDNumber>7788990076</STCCompanyIDNumber>
+         <STCContractContactEmail>smatta.c@stc.com.sa</STCContractContactEmail>
+         <STCContractContactIDNum>2-1570-3329-7</STCContractContactIDNum>
+         <STCContractContactMobileNum>532967786</STCContractContactMobileNum>
+         <STCContractDuration>2</STCContractDuration>
+         <STCDigitalContactId>3-J5FAORT</STCDigitalContactId>
+         <STCDigitalContractNameCalc>Balivadas Sowmya</STCDigitalContractNameCalc>
+         <STCPrimaryAccountExtraNumber>05077</STCPrimaryAccountExtraNumber>
+         <STCPrimaryAccountStreetAddress>tfchvhjb</STCPrimaryAccountStreetAddress>
+         <STCMainDiscCalc>Y</STCMainDiscCalc>
+         <STCNRCDiscCalc>N</STCNRCDiscCalc>
+         <STCVASDiscCalc>N</STCVASDiscCalc>
+         <StreetName>gcvjhnk</StreetName>
+         <STCMainContractNum/>
+         <STCDigiAccMgrFName>-</STCDigiAccMgrFName>
+         <STCDigiAccMgrID>248058</STCDigiAccMgrID>
+         <STCDigiAccMgrLName>TEST_BBLEAD14</STCDigiAccMgrLName>
+         <STCDigiAccMgrNameCalc>- TEST_BBLEAD14</STCDigiAccMgrNameCalc>
+         <STCDigiAccMgrNationality>Saudi Arabia</STCDigiAccMgrNationality>
+         <STCIDRegDate>28-08-1434</STCIDRegDate>
+         <STCIDRegPlace>Riyadh</STCIDRegPlace>
+         <STCContractContactNationality>Saudi Arabia</STCContractContactNationality>
+         <ListOfStcquoteaddvas>
+            <Stcquoteaddvas>
+               <AliasNameAdd>Edge Router1</AliasNameAdd>
+               <BandwidthAdd/>
+               <DiscNetPriceAdd>0</DiscNetPriceAdd>
+               <DiscPercentAdd>0</DiscPercentAdd>
+               <ExtNetPriceAdd>0</ExtNetPriceAdd>
+               <NameAdd>Edge Router1</NameAdd>
+               <NetPriceAdd>0</NetPriceAdd>
+               <PriceTypeAdd>Recurring</PriceTypeAdd>
+               <QuantityAdd>1</QuantityAdd>
+               <QuoteId>3-O9A3FF5</QuoteId>
+               <SpNumAdd/>
+               <SystemNameAdd>CRMD</SystemNameAdd>
+               <TypeAdd>VAS</TypeAdd>
+               <RootProdNameVAS>SDWANB</RootProdNameVAS>
+            </Stcquoteaddvas>
+         </ListOfStcquoteaddvas>
+         <ListOfStcquotemainsvcmrc>
+            <Stcquotemainsvcmrc>
+               <AliasNameMain>SDWAN</AliasNameMain>
+               <BandwidthMain/>
+               <DiscNetPriceMain>946.6</DiscNetPriceMain>
+               <DiscPercentMain>5.34</DiscPercentMain>
+               <ExtNetPriceMain>946.6</ExtNetPriceMain>
+               <NameMain>SDWAN</NameMain>
+               <NetPriceMain>1000</NetPriceMain>
+               <PriceTypeMain>Recurring</PriceTypeMain>
+               <QuantityMain>1</QuantityMain>
+               <QuoteId>3-O9A3FF5</QuoteId>
+               <SpNumMain>SDWAN_PACtype_Basic-1CPE - 1UL_ERTRModel1_CPE Medium-LTE (M-L)_ERTRModel2_NA</SpNumMain>
+               <SystemNameMain>CRMD</SystemNameMain>
+               <RootServiceNumber>3-O9A3FIF</RootServiceNumber>
+               <TypeMain>Root</TypeMain>
+               <RootProductMain>SDWANB</RootProductMain>
+               <ContractDurationMain/>
+            </Stcquotemainsvcmrc>
+         </ListOfStcquotemainsvcmrc>
+         <ListOfStcquotenrcvas>
+            <Stcquotenrcvas>
+               <AliasNameNRC>Edge Router1 OTC</AliasNameNRC>
+               <BandwidthNRC/>
+               <DiscNetPriceNRC>1200</DiscNetPriceNRC>
+               <DiscPercentNRC>0</DiscPercentNRC>
+               <ExtNetPriceNRC>1200</ExtNetPriceNRC>
+               <NameNRC>Edge Router1 OTC</NameNRC>
+               <NetPriceNRC>1200</NetPriceNRC>
+               <PriceTypeNRC>One-Time</PriceTypeNRC>
+               <QuantityNRC>1</QuantityNRC>
+               <QuoteId>3-O9A3FF5</QuoteId>
+               <SpNumNRC/>
+               <SystemNameNRC>CRMD</SystemNameNRC>
+               <TypeNRC>Product</TypeNRC>
+               <RootProdNameNRC>SDWANB</RootProdNameNRC>
+            </Stcquotenrcvas>
+         </ListOfStcquotenrcvas>
+         <ListOfStcDigitalContractDocumentsApproved>
+            <StcDigitalContractDocumentsApproved>
+               <DigiConId>3-O9AFS0W</DigiConId>
+               <ApprovalTime/>
+               <DocumentType>Contract Document</DocumentType>
+            </StcDigitalContractDocumentsApproved>
+         </ListOfStcDigitalContractDocumentsApproved>
+         <ListOfStcquotedevice/>
+         <ListOfProductServiceTemplateBc>
+            <ProductServiceTemplateBc>
+               <RootServiceNumber/>
+               <FinalServiceCircuitNumber>JEDDAH-JEDDAH SDWAN10164</FinalServiceCircuitNumber>
+               <Id>3-O9A3FIF</Id>
+               <ActionCode>Add</ActionCode>
+               <ProductId>3-BG4W0XH</ProductId>
+               <ProductType>Root</ProductType>
+               <QuoteId>3-O9A3FF5</QuoteId>
+               <STCDataCircuitType>Circuit</STCDataCircuitType>
+               <STCFixedLineCategory>Data Circuit</STCFixedLineCategory>
+               <STCProductEndDate/>
+               <STCSystemName>CRMD</STCSystemName>
+               <Service/>
+               <AliasName>SDWAN</AliasName>
+            </ProductServiceTemplateBc>
+         </ListOfProductServiceTemplateBc>
+      </Stcquotereportbc>
+   </ListOfBipcontractnewsaleio>
+</SiebelMessage>
